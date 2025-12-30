@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Store</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <p>hi</p>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">MyStore.</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Produk</a></li>
+                    <li><a href="#">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Selamat Datang di General Store</h1>
+        <p>Temukan segala kebutuhanmu di sini dengan harga terbaik.</p>
+    </section>
+
+    <main>
+        <h2>Produk Terbaru</h2>
+        <div class="product-container">
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <span>Gambar Produk</span>
+                </div>
+                <h3>Nanti barang disini</h3>
+                <p class="price">Rp 50.000</p>
+                <button class="buy-btn" onclick="addToCart('Barang A')">Beli Sekarang</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <span>Gambar Produk</span>
+                </div>
+                <h3>Nanti barang disini</h3>
+                <p class="price">Rp 75.000</p>
+                <button class="buy-btn" onclick="addToCart('Barang B')">Beli Sekarang</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <span>Gambar Produk</span>
+                </div>
+                <h3>Nanti barang disini /h3>
+                <p class="price">Rp 120.000</p>
+                <button class="buy-btn" onclick="addToCart('Barang C')">Beli Sekarang</button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 General Store.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
