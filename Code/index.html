@@ -1,67 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>General Store</title>
+    <title>GRL Store</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <div class="navbar">
-            <div class="logo">MyStore.</div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Produk</a></li>
-                    <li><a href="#">Kontak</a></li>
-                </ul>
-            </nav>
+    <header class="header-nav">
+        <div class="container-navbar">
+            <div class="nama">GRL Store</div>
+            
+            <div class="search">
+                <i class="fas fa-search icon-earch"></i>
+                <input type="text" placeholder="Get What You Desire">
+            </div>
+
+            <div class="belanja-nav">
+                <div class="icon-cart">
+                    <i class="fas fa-shopping-cart cart"></i>
+                </div>
+                <button class="tombol login" onclick="alert('Menuju halaman login')">Login</button>
+            </div>
         </div>
     </header>
 
-    <section class="hero">
-        <h1>Selamat Datang di General Store</h1>
-        <p>Temukan segala kebutuhanmu di sini dengan harga terbaik.</p>
+    <section class="banner-container">
+        <img src="promo.image" alt="Promo Banner" class="promosi">
     </section>
 
     <main>
-        <h2>Produk Terbaru</h2>
-        <div class="product-container">
+        <h2>Rekomendasi Pilihan</h2>
+        <div class="produk">
             
-            <div class="product-card">
-                <div class="product-image">
-                    <span>Gambar Produk</span>
-                </div>
-                <h3>Nanti barang disini</h3>
-                <p class="price">Rp 50.000</p>
-                <button class="buy-btn" onclick="addToCart('Barang A')">Beli Sekarang</button>
+            <div class="produk-solo">
+                <div class="gambar-produk"></div>
+                <h3>Sepatu Sneakers</h3>
+                <p class="harga">Rp 150.000</p>
+                <button class="tombol-beli" onclick="addToCart('Sepatu Sneakers')">Beli</button>
             </div>
 
-            <div class="product-card">
-                <div class="product-image">
-                    <span>Gambar Produk</span>
-                </div>
-                <h3>Nanti barang disini</h3>
-                <p class="price">Rp 75.000</p>
-                <button class="buy-btn" onclick="addToCart('Barang B')">Beli Sekarang</button>
+            <div class="produk-solo">
+                <div class="gambar-produk"></div>
+                <h3>Tas Ransel</h3>
+                <p class="harga">Rp 85.000</p>
+                <button class="tombol-beli" onclick="addToCart('Tas Ransel')">Beli</button>
             </div>
 
-            <div class="product-card">
-                <div class="product-image">
-                    <span>Gambar Produk</span>
-                </div>
-                <h3>Nanti barang disini /h3>
-                <p class="price">Rp 120.000</p>
-                <button class="buy-btn" onclick="addToCart('Barang C')">Beli Sekarang</button>
+            <div class="produk-solo">
+                <div class="gambar-produk"></div>
+                <h3>Jam Tangan</h3>
+                <p class="harga">Rp 200.000</p>
+                <button class="tombol-beli" onclick="addToCart('Jam Tangan')">Beli</button>
+            </div>
+
+             <div class="produk-solo">
+                <div class="gambar-produk"></div>
+                <h3>Kemeja Flanel</h3>
+                <p class="harga">Rp 120.000</p>
+                <button class="tombol-beli" onclick="addToCart('Kemeja Flanel')">Beli</button>
+            </div>
+
+            <div class="produk-solo">
+                <div class="gambar-produk"></div>
+                <h3>Topi Baseball</h3>
+                <p class="harga">Rp 50.000</p>
+                <button class="tombol-beli" onclick="addToCart('Topi Baseball')">Beli</button>
+            </div>
+
+            <div class="produk-solo">
+                <div class="gambar-produk"></div>
+                <h3>Jaket Hoodie</h3>
+                <p class="harga">Rp 175.000</p>
+                <button class="tombol-beli" onclick="addToCart('Jaket Hoodie')">Beli</button>
+            </div>
+
+            <div class="produk-solo">
+                <div class="gambar-produk"></div>
+                <h3>Celana Jeans</h3>
+                <p class="harga">Rp 180.000</p>
+                <button class="tombol-beli" onclick="addToCart('Celana Jeans')">Beli</button>
+            </div>
+
+            <div class="produk-solo">
+                <div class="gambar-produk"></div>
+                <h3>Dompet Kulit</h3>
+                <p class="harga">Rp 90.000</p>
+                <button class="tombol-beli" onclick="addToCart('Dompet Kulit')">Beli</button>
+            </div>
+
+            <div class="produk-solo">
+                <div class="gambar-produk"></div>
+                <h3>Kacamata Hitam</h3>
+                <p class="harga">Rp 60.000</p>
+                <button class="tombol-beli" onclick="addToCart('Kacamata Hitam')">Beli</button>
+            </div>
+
+            <div class="produk-solo">
+                <div class="gambar-produk"></div>
+                <h3>Sandal Casual</h3>
+                <p class="harga">Rp 45.000</p>
+                <button class="tombol-beli" onclick="addToCart('Sandal Casual')">Beli</button>
             </div>
 
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 General Store.</p>
+        <div class="footer">
+            <div class="footer1">
+                <h4>GRL Store</h4>
+                <p>Masih belum tau ditulis apa</p>
+            </div>
+            <div class="footer1">
+                <h4>GRL Store</h4>
+                <ul>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Kebijakan dan Privasi</a></li>
+                    <li><a href="#">Syarat dan Ketentuan</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
