@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail Produk</title>
+  <link rel="stylesheet" href="barang.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header-nav">
+  <div class="container-navbar">
+    <div class="nama">GRL Store</div>
+  </div>
+</header>
+
+<main class="detail-wrapper">
+
+  <!-- KIRI: GAMBAR -->
+  <div class="detail-left">
+    <img id="gambar" class="detail-img">
+  </div>
+
+  <!-- KANAN: INFO -->
+  <div class="detail-right">
+    <h1 id="nama"></h1>
+
+    <div class="rating">
+      ⭐⭐⭐⭐⭐ <span>(123 ulasan)</span>
+    </div>
+
+    <h2 id="harga" class="harga-detail"></h2>
+
+    <div class="opsi">
+      <p>Ukuran:</p>
+      <button>S</button>
+      <button>M</button>
+      <button>L</button>
+      <button>XL</button>
+    </div>
+
+    <div class="opsi">
+      <p>Jumlah:</p>
+      <button onclick="kurang()">-</button>
+      <span id="qty">1</span>
+      <button onclick="tambah()">+</button>
+    </div>
+
+    <div class="aksi">
+      <button class="btn-keranjang">
+        <i class="fas fa-shopping-cart"></i> Keranjang
+      </button>
+      <button class="btn-beli">Beli Sekarang</button>
+    </div>
+
+  </div>
+</main>
+
+<!-- DESKRIPSI -->
+<section class="deskripsi-box">
+  <h3>Deskripsi Produk</h3>
+  <p id="deskripsi"></p>
+</section>
+
+<script src="barang.js"></script>
+</body>
+</html>
