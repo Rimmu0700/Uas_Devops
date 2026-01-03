@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail Produk</title>
+  <link rel="stylesheet" href="barang.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="navbar-container">
+    
+    <!-- Logo -->
+    <div class="logo">
+      GRL <span>Store</span>
+    </div>
+
+    <!-- Search -->
+    <div class="search-box">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Get What You Desire">
+    </div>
+
+    <!-- Right Menu -->
+    <div class="nav-actions">
+      <i class="fas fa-shopping-cart cart-icon"></i>
+      <a href="login.html" class="btn-login">Login</a>
+    </div>
+
+  </div>
+</header>
+
+
+<main class="detail-wrapper">
+
+  <!-- KIRI: GAMBAR -->
+  <div class="detail-left">
+    <img id="gambar" class="detail-img">
+  </div>
+
+  <!-- KANAN: INFO -->
+  <div class="detail-right">
+    <h1 id="nama"></h1>
+
+    <div class="rating">
+      ⭐⭐⭐⭐⭐ <span>(123 ulasan)</span>
+    </div>
+
+    <h2 id="harga" class="harga-detail"></h2>
+
+    <div class="opsi">
+      <p>Ukuran:</p>
+      <button>S</button>
+      <button>M</button>
+      <button>L</button>
+      <button>XL</button>
+    </div>
+
+    <div class="opsi">
+      <p>Jumlah:</p>
+      <button onclick="kurang()">-</button>
+      <span id="qty">1</span>
+      <button onclick="tambah()">+</button>
+    </div>
+
+    <div class="aksi">
+      <button class="btn-keranjang">
+        <i class="fas fa-shopping-cart"></i> Keranjang
+      </button>
+      <button class="btn-beli">Beli Sekarang</button>
+    </div>
+
+  </div>
+</main>
+
+<!-- DESKRIPSI -->
+<<!-- DESKRIPSI DETAIL PRODUK -->
+<section class="detail-deskripsi">
+
+  <div class="deskripsi-card">
+    <h3>Deskripsi Produk</h3>
+    <p id="deskripsi"></p>
+  </div>
+
+  <div class="deskripsi-card">
+    <h3>Spesifikasi Produk</h3>
+    <table class="spesifikasi">
+      <tr>
+        <td>Bahan</td>
+        <td>Katun Flanel Premium</td>
+      </tr>
+      <tr>
+        <td>Model</td>
+        <td>Lengan Panjang</td>
+      </tr>
+      <tr>
+        <td>Warna</td>
+        <td>Merah Hitam</td>
+      </tr>
+      <tr>
+        <td>Ukuran</td>
+        <td>S, M, L, XL</td>
+      </tr>
+    </table>
+  </div>
+
+</section>
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-left">
+      <h3>GRL Store</h3>
+      <p>© 2024 GRL Store.</p>
+    </div>
+
+    <div class="footer-right">
+      <h4>Navigasi</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Produk</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+<script src="barang.js"></script>
+</body>
+</html>
