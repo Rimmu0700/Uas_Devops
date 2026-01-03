@@ -9,11 +9,29 @@
 </head>
 <body>
 
-<header class="header-nav">
-  <div class="container-navbar">
-    <div class="nama">GRL Store</div>
+<header class="navbar">
+  <div class="navbar-container">
+    
+    <!-- Logo -->
+    <div class="logo">
+      GRL <span>Store</span>
+    </div>
+
+    <!-- Search -->
+    <div class="search-box">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Get What You Desire">
+    </div>
+
+    <!-- Right Menu -->
+    <div class="nav-actions">
+      <i class="fas fa-shopping-cart cart-icon"></i>
+      <a href="login.html" class="btn-login">Login</a>
+    </div>
+
   </div>
 </header>
+
 
 <main class="detail-wrapper">
 
@@ -58,10 +76,59 @@
 </main>
 
 <!-- DESKRIPSI -->
-<section class="deskripsi-box">
-  <h3>Deskripsi Produk</h3>
-  <p id="deskripsi"></p>
+<<!-- DESKRIPSI DETAIL PRODUK -->
+<section class="detail-deskripsi">
+
+  <div class="deskripsi-card">
+    <h3>Deskripsi Produk</h3>
+    <p id="deskripsi"></p>
+  </div>
+
+  <div class="deskripsi-card">
+    <h3>Spesifikasi Produk</h3>
+    <table class="spesifikasi">
+      <tr>
+        <td>Bahan</td>
+        <td>Katun Flanel Premium</td>
+      </tr>
+      <tr>
+        <td>Model</td>
+        <td>Lengan Panjang</td>
+      </tr>
+      <tr>
+        <td>Warna</td>
+        <td>Merah Hitam</td>
+      </tr>
+      <tr>
+        <td>Ukuran</td>
+        <td>S, M, L, XL</td>
+      </tr>
+    </table>
+  </div>
+
 </section>
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-left">
+      <h3>GRL Store</h3>
+      <p>© 2024 GRL Store.</p>
+    </div>
+
+    <div class="footer-right">
+      <h4>Navigasi</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Produk</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
 
 <script src="barang.js"></script>
 </body>
