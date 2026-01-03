@@ -1,0 +1,117 @@
+/* RESET & GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-blue: #00BFFF;
+    --hover-blue: #009ACD;
+    --white: #ffffff;
+    --text-dark: #333;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-dark);
+}
+
+/* CONTAINER LOGIN */
+.login-container {
+    background: var(--white);
+    width: 100%;
+    max-width: 380px;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 191, 255, 0.15);
+    border: 1px solid #e6f7ff;
+}
+
+/* JUDUL */
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 22px;
+    color: var(--primary-blue);
+    font-weight: bold;
+}
+
+/* INPUT */
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #e5e7e9;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.input-group input:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 2px rgba(0, 191, 255, 0.15);
+}
+
+/* BUTTON LOGIN */
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    background: var(--primary-blue);
+    color: var(--white);
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-login:hover {
+    background: var(--hover-blue);
+    transform: translateY(-2px);
+}
+
+/* LINK DAFTAR & KEMBALI */
+.daftar,
+.kembali {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.daftar a,
+.kembali a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.daftar a:hover,
+.kembali a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 22px;
+        margin: 0 15px;
+    }
+}
